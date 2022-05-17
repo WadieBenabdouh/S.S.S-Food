@@ -77,7 +77,57 @@ section{
     text-decoration: none;
     color: #000;
 }
-
+.forward-link #right-arrow{
+    margin: 0 4px;
+}
 #restaurant{
     max-width: 400px;
+}
+/* SECTION - WELCOME END*/
+
+
+
+
+
+
+
+
+
+
+
+/*<<|************* MEDIA QUERY *************|>>*/
+@media(max-width:768px){
+    
+    /* HEADER */
+    .header-container{
+        flex-direction: column;
+    }
+
+    /* SECTION - WELCOME */
+    .welcome-container{
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+    
+    .menu-link h2{
+        font-size: 25px;
+    }
+    .forward-link{
+        font-size: 15px;
+        padding: 5px 10px;
+        margin-top: 30px;
+    }
+    
+    .forward-link #right-arrow{
+        transform: rotate(90deg);
+    }
+
+    #restaurant{
+        max-width: 25em;
+        border: 2px yellow solid;
+        margin-top:  0px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
 }
