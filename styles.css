@@ -59,10 +59,23 @@ section{
     justify-content: space-evenly;
     margin: 3em 50px;
 }
+.menu-link h2{
+    color: #FFF;
+    font-size: 3rem;
+}
 .forward-link{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: yellow;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+.forward-link a{
+    text-decoration: none;
+    color: #000;
 }
 
 #restaurant{
