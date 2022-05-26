@@ -124,9 +124,10 @@ section{
     }
 
     #restaurant{
-        max-width: 25em;
+        max-width: 20em;
         border: 2px yellow solid;
-        margin-top:  0px;
+        position: relative;
+        top: -20px;
         margin-bottom: 10px;
         border-radius: 10px;
     }
