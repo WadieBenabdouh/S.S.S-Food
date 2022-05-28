@@ -1,89 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 /* GLOBAL TWEAKS */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
 /* GLOBAL TWEAKS END */
 
 /* HEADER */
-.header-container{
-    background-color: #2C2D34FF;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header-container {
+  background-color: #2c2d34ff;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header-container div h1{
-    color: #FFC700FF;
-    margin: 0 10px;
+
+.header-container div h1 {
+  color: #ffc700ff;
+  margin: 0 10px;
 }
-.header-container div span #logo{
-    font-size: 25px;
-    position: relative;
-    top: -3px;
+
+.header-container div span #logo {
+  font-size: 25px;
+  position: relative;
+  top: -3px;
 }
-nav ul{
-    list-style: none;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+nav ul {
+  list-style: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav ul li{
-    padding: 0 20px;
+
+nav ul li {
+  padding: 0 20px;
 }
-nav ul li a{
-    color: #FFF;
-    text-decoration: none;
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
+
 /* HEADER END*/
 
 /* SECTION - WELCOME */
 
-section{
-    background-color: #E94822FF;
+section {
+  background-color: #e94822ff;
 }
-.welcome-container{
-    height: 20em;
+
+.welcome-container {
+  height: 20em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-link {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 3em 50px;
+}
+
+.menu-link h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.forward-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+  border: 2px solid black;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+
+.forward-link a {
+  text-decoration: none;
+  color: #000;
+}
+
+.forward-link #right-arrow {
+  margin: 0 4px;
+}
+
+#restaurant {
+  max-width: 400px;
+}
+
+/* SECTION - WELCOME END*/
+
+/* ARICLE MENU */
+.food-gallery{
+    height: 30em;
+    background-color: rgb(51, 51, 51);
+    border: 1px solid #000;
     display: flex;
-    justify-content: space-between;
 }
-.menu-link{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 3em 50px;
-}
-.menu-link h2{
-    color: #FFF;
-    font-size: 3rem;
-}
-.forward-link{
+.food-card{
+    outline: 1px red solid;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    width: 320px;
+}
+.food-card #image-one{
+    max-width: 250px;
+    margin: 10px;
+}
+.food-card .stars{
+    margin-inline: 5px;
+}
+.food-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+.food-title p{
     background-color: yellow;
-    border: 2px solid black;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;
 }
-.forward-link a{
-    text-decoration: none;
-    color: #000;
+.food-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.forward-link #right-arrow{
-    margin: 0 4px;
+.food-desc p{
+    margin-top: 25px;
+    text-align: center;
 }
-#restaurant{
-    max-width: 400px;
-}
-/* SECTION - WELCOME END*/
+/* ARICLE MENU END*/
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,39 +160,40 @@ section{
 
 
 /*<<|************* MEDIA QUERY *************|>>*/
-@media(max-width:768px){
-    
-    /* HEADER */
-    .header-container{
-        flex-direction: column;
-    }
 
-    /* SECTION - WELCOME */
-    .welcome-container{
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-    }
-    
-    .menu-link h2{
-        font-size: 25px;
-    }
-    .forward-link{
-        font-size: 15px;
-        padding: 5px 10px;
-        margin-top: 30px;
-    }
-    
-    .forward-link #right-arrow{
-        transform: rotate(90deg);
-    }
+@media (max-width: 768px) {
+  /* HEADER */
+  .header-container {
+    flex-direction: column;
+  }
 
-    #restaurant{
-        max-width: 20em;
-        border: 2px yellow solid;
-        position: relative;
-        top: -20px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-    }
+  /* SECTION - WELCOME */
+  .welcome-container {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .menu-link h2 {
+    font-size: 25px;
+  }
+
+  .forward-link {
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-top: 30px;
+  }
+
+  .forward-link #right-arrow {
+    transform: rotate(90deg);
+  }
+
+  #restaurant {
+    max-width: 20em;
+    border: 2px yellow solid;
+    position: relative;
+    top: -20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
 }
