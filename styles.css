@@ -138,6 +138,10 @@ section {
     margin-top: 25px;
     text-align: center;
 }
+.food-card a{
+    text-decoration: none;
+    background-color: #000;
+}
 /* ARICLE MENU END*/
 
 
