@@ -119,20 +119,26 @@ section {
     margin: 10px;
     border-radius: 10px;
     height: fit-content;
+    /* align-items: center; */
 }
-.food-card #image-one{
+.food-card #image-one, #image-three{
     max-width: 250px;
     margin: 10px;
     border: 2px solid #000;
     border-radius: 10px;
 }
 .food-card .stars{
-    margin-inline: 5px;
+    margin-inline: 20px;
 }
 .food-title{
     display: flex;
-    justify-content: space-between;
     margin: 0 5px;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.food-title h5,p{
+    margin: 10px 15px;
 }
 .food-title p{
     background-color: yellow;
@@ -160,6 +166,16 @@ section {
 .food-card .purchase{
     margin-top: 20px;
 }
+
+
+            /* SECOND CARD */
+.food-card #image-two{
+    max-width: 250px;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
 /* ARICLE MENU END*/
 
 
