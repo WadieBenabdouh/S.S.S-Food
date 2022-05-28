@@ -113,10 +113,16 @@ section {
     flex-direction: column;
     padding: 20px;
     width: 320px;
+    background-color: #e70533;
+    margin: 10px;
+    border-radius: 10px;
+    height: fit-content;
 }
 .food-card #image-one{
     max-width: 250px;
     margin: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
 }
 .food-card .stars{
     margin-inline: 5px;
@@ -141,6 +147,16 @@ section {
 .food-card a{
     text-decoration: none;
     background-color: #000;
+    border-radius: 50px;
+    padding: 5px;
+    color: #fff;
+}
+.food-card a:hover{
+    color: blue;
+    transition: all 0.3s ease-in-out;
+}
+.food-card .purchase{
+    margin-top: 20px;
 }
 /* ARICLE MENU END*/
 
