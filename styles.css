@@ -1,4 +1,7 @@
+/* Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* Oxygen */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 
 /* GLOBAL TWEAKS */
 * {
@@ -12,7 +15,7 @@
 
 /* HEADER */
 .header-container {
-  background-color: #2c2d34ff;
+  background-color: #424040;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -45,6 +48,15 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a:hover{
+  color: red;
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 50px;
+
 }
 
 /* HEADER END*/
@@ -103,7 +115,10 @@ section {
 /* ARICLE MENU */
 .food-gallery{
     height: fit-content;
-    background-color: rgb(51, 51, 51);
+    /* background-color: #888888; */
+    background: url("https://img.freepik.com/free-vector/collection-handrawn-elements-fast-food_125540-314.jpg?t=st=1654041707~exp=1654042307~hmac=7258b5d8d723e1b7fe8dbe5cf077576f3065eacd2fbeb94a2c81b3ba6b981e37&w=740");
+    background-size: 20em;
+
     border: 1px solid #000;
     display: flex;
     justify-content: space-around;
@@ -115,7 +130,7 @@ section {
     flex-direction: column;
     padding: 20px;
     width: 320px;
-    background-color: #e70533;
+    background-color: #ee6c16;
     margin: 10px;
     border-radius: 10px;
     height: fit-content;
@@ -133,21 +148,26 @@ section {
     /* margin-inline: 20px; */
     position: relative;
     left: -70px;
-    color: cyan;
+    color: #0011ff;
 }
 .food-title{
     display: flex;
     margin: 0 5px;
-    border: 2px solid #ffd900;
-    border-top-left-radius: 20px;
+    border: 2px solid #000000;
+    border-top-left-radius: 30px;
     border-bottom-right-radius: 20px;
+    background-color: #e01515;
 }
 .food-title h5,p{
     margin: 10px 15px;
 }
 .food-title h5{
     font-style: italic;
-    font-weight: bold;
+    color: #ffffff;
+    background-color: #23178f;
+    border: 2px solid #000;
+    border-radius: 50px;
+    padding: 0 2px;
 }
 .food-title p{
     background-color: yellow;
@@ -161,6 +181,9 @@ section {
 .food-desc p{
     margin-top: 25px;
     text-align: center;
+    color: #000808;
+    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
 }
 .food-card a{
     text-decoration: none;
@@ -170,11 +193,12 @@ section {
     color: #fff;
     position: relative;
     left: -100px;
+    transition: all 0.3s ease-in-out;
 }
 .food-card a:hover{
-    color: blue;
-    transition: all 0.3s ease-in-out;
-    position: relative;
+    color: #00aeff;
+    
+    
 }
 .food-card .purchase{
     margin-top: 20px;
