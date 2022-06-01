@@ -115,6 +115,7 @@ section {
 /* ARICLE MENU */
 .food-gallery{
     height: fit-content;
+    padding: 30px;
     /* background-color: #888888; */
     background: url("img/food\ illus\ blured\ bkg.jpg");
     background-size: 20em;
@@ -122,6 +123,7 @@ section {
     border: 1px solid #000;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 .food-card{
@@ -135,7 +137,7 @@ section {
     border-radius: 10px;
     height: fit-content;
     box-shadow: black 5px 5px 2px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     align-items: center;
 }
 .food-card #image-one, #image-three{
