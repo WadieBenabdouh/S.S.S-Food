@@ -176,6 +176,8 @@ section {
 .food-title p{
     background-color: yellow;
     padding: 0 2px;
+    border: 1px solid #000;
+    border-top-right-radius: 10px;
 }
 .food-desc{
     display: flex;
