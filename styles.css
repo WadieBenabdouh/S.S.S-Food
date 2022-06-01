@@ -123,7 +123,7 @@ section {
     padding: 30px;
     background: url("img/food\ illus\ blured\ bkg.jpg");
     background-size: 20em;
-    border: 1px solid #000;
+    border: 1px solid #bd85ba;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -133,13 +133,14 @@ section {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    width: 320px;
+    width: 324px;
     background-color: #ee6c16;
     margin: 10px;
     border-radius: 10px;
     height: fit-content;
     box-shadow: black 5px 5px 2px;
     align-items: center;
+    border: #000 solid 2px;
 }
 .food-card #image-one, #image-three{
     max-width: 250px;
@@ -169,7 +170,8 @@ section {
     background-color: #23178f;
     border: 2px solid #000;
     border-radius: 50px;
-    padding: 0 2px;
+    padding: 0 5px;
+    margin-inline: 5px;
 }
 .food-title p{
     background-color: yellow;
