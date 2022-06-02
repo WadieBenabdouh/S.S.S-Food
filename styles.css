@@ -221,6 +221,32 @@ section {
 
 /* ARICLE MENU END*/
 
+/* NEWSLETTER */
+.newsletter{
+  height: 10em;
+  background-color: #542BF5FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsletter-wrapper h3{
+  color: #fff;
+}
+.newsletter-wrapper h3 .fa-share{
+  position: relative;
+  left: 10px;
+  transform: rotate(140deg);
+  color: #000;
+}
+
+
+
+
+
+
 
 
 
