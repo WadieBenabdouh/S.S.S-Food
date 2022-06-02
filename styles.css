@@ -266,6 +266,17 @@ section {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*<<|************* MEDIA QUERY *************|>>*/
 
 @media (max-width: 768px) {
@@ -304,4 +315,17 @@ section {
     margin-bottom: 10px;
     border-radius: 10px;
   }
+
+  /* NEWSLETTER */
+  /* Note : to get another visual style delete all these properties below */
+          /* form{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+          }
+
+          .email-form{
+            width: 170px;
+          } */
+  /* Note : the deletion stops here. */
 }
