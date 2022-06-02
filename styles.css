@@ -51,7 +51,7 @@ nav ul li a {
   transition: all 0.5s;
 }
 
-nav a:hover{
+nav .header-links:hover{
   color: red;
   background-color: #fff;
   padding: 3px;
@@ -241,6 +241,36 @@ section {
   transform: rotate(140deg);
   color: #000;
 }
+/* NEWSLETTER END */
+
+/* FOOTER */
+footer{
+  height: 13em;
+  background-color: #000;
+  padding: 20px;
+}
+.footer-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wrapper div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-wrapper div p:nth-child(2){
+  position: relative;
+  top: -10px;
+}
+
+.footer-wrapper p{
+  color: #fff;
+}
+/* FOOTER END */
 
 
 
@@ -317,6 +347,7 @@ section {
   }
 
   /* NEWSLETTER */
+  
   /* Note : to get another visual style delete all these properties below */
           /* form{
             display: flex;
@@ -328,4 +359,6 @@ section {
             width: 170px;
           } */
   /* Note : the deletion stops here. */
+
+   /* NEWSLETTER END */
 }
